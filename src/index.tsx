@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Home from './pages/Home'
 import * as ReactDOM from "react-dom";
 
