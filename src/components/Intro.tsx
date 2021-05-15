@@ -1,6 +1,5 @@
 import React, {ReactElement} from 'react';
 import '../styles/intro.css';
-import {Container, Row, Col} from 'react-bootstrap';
 
 export interface IntroProps{
     title: string;
@@ -13,18 +12,18 @@ const Intro: React.FC<IntroProps> = (
         const title = props.title;
         const content = props.content;
         return(
-            <Container>
-                <Row className="justify-content-md-center">
-                    <div className="title">
+            <div>
+                <div className="justify-center">
+                    <div className="text-2xl">
                         {title}
                     </div>
-                </Row>
-                <Row className="justify-content-md-center">
+                </div>
+                <div className="">
                     <div className="content">
                         {content}
                     </div>
-                </Row>
-            </Container>
+                </div>
+            </div>
         )
     }
 
