@@ -1,4 +1,5 @@
 import React, {ReactElement} from 'react';
+import HeaderProfile from '../components/HeaderProfile'
 
 export interface HomeProps{
 
@@ -8,7 +9,7 @@ const Home: React.FC<HomeProps> = ({
 
 }: HomeProps): ReactElement =>{
     return(
-        <p>Home page</p>
+        <HeaderProfile label={"Header profile"}/>
     )
 }
 
