@@ -9,7 +9,13 @@ const Home: React.FC<HomeProps> = ({
 
 }: HomeProps): ReactElement =>{
     return(
-        <HeaderProfile label={"Header profile"}/>
+        <div>
+            <div >
+                <HeaderProfile label={"Header profile"}/>
+            </div>
+
+        </div>
+        
     )
 }
 
