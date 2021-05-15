@@ -1,6 +1,7 @@
 import React, {ReactElement} from 'react';
 import Intro from '../components/Intro';
-import HeaderProfile from '../components/HeaderProfile'
+import HeaderProfile from '../components/HeaderProfile';
+import Skills from '../components/Skills';
 
 export interface HomeProps{
 
@@ -21,8 +22,8 @@ const Home: React.FC<HomeProps> = ({
                     'You will be able to see what languages we are proficient in and what other skills we have. ' +
                     'We will present something about ourselves as well and also get to know what kind of people we are.'}
                 />
+                </div>
             </div>
-        </div>
     )
 }
 
