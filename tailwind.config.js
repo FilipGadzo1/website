@@ -5,8 +5,8 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {
-    },
+    translate: ['responsive', 'hover', 'focus', 'motion-safe'],
+    extend: {},
   },
   plugins: [],
 }

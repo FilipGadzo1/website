@@ -1,3 +1,4 @@
+import { link } from 'fs/promises';
 import React, {ReactElement} from 'react';
 import profile from '../images/profile.jpg';
 
@@ -15,11 +16,37 @@ export interface ProfileTitleProp{
 const ProfileTitle: React.FC<ProfileTitleProp> = ({
     title
 }: ProfileTitleProp): ReactElement => {
+    const linkStyle=[
+        "bg-blue-500",
+        "font-bold",
+        "py-2",
+        "px-4",
+        "border",
+        "border-blue-700",
+        "rounded",
+        "hover:no-underline",
+        "hover:text-white",
+        "hover:bg-blue-700",
+    ]
+
+    const link = [
+        {name: "Facebook", link: "https://www.facebook.com/"},
+        {name: "Twitter", link: "https://twitter.com/home"},
+        {name: "LinkedIn", link: "https://www.linkedin.com/feed/"}
+    ];
+
+    const linkList = link.map((links) => 
+        <a href={links.link} className="pr-3 text-blue-500 hover:text-blue-300 hover:no-underline">{links.name}</a>
+    )
+
     return(
-        <div >
-            <h1 className="px-10 pt-40 font-extrabold text-4xl text-center">{title}</h1>
-            <div className="text-center pt-10">
-                <a href="https://www.linkedin.com/feed/" className="bg-blue-500 hover:bg-blue-700 hover:text-white hover:no-underline font-bold py-2 px-4 border border-blue-700 rounded">Email</a>
+        <div className="px-10 pt-24">
+            <h1 className="font-extrabold text-4xl text-center">{title}</h1>
+            <div className="text-center pl-4 pt-20">
+                <a href="https://www.google.com/gmail/about/" className={linkStyle.join(" ")}>Email</a>
+            </div>
+            <div className="pt-32">
+                {linkList}
             </div>
         </div>
     )
