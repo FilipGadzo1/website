@@ -51,8 +51,8 @@ const Intro: React.FC<IntroProps> = (
         const box = [
             "box-border",
             "border-4",
-            "h-48",
-            "p-4",
+            "h-36",
+            "py-3",
             "mt-24",
             "mx-32",
             "mr-96",
@@ -69,12 +69,12 @@ const Intro: React.FC<IntroProps> = (
         return(
             <div>
                 <div className={box.join(" ")}>
-                    <div className="h-8 pl-16 flex flex-wrap content-center">
+                    <div className="h-6 pl-16 flex flex-wrap content-center">
                         <div className="text-2xl font-medium text-gray-700">
                             {title}
                         </div>
                     </div>
-                    <div className="h-20 pl-16 flex flex-wrap content-center">
+                    <div className="h-20 pl-28 flex flex-wrap content-center">
                         <div className="mr-48 text-base font-medium text-gray-700">
                             {content}
                         </div>
