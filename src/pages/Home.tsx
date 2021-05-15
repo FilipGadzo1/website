@@ -12,7 +12,7 @@ const Home: React.FC<HomeProps> = ({
     return(
         <div>
             <div >
-                <HeaderProfile label={"Header profile"}/>
+                <HeaderProfile />
             </div>
             <div>
                 <Intro title = {'Introduction'} content = {'In this CV you will read about our experience'}/>
