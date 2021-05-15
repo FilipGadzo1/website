@@ -20,7 +20,8 @@ const Skills: React.FC<SkillsProps> = (
         {skill: "JavaScript"},
         {skill: "React"},
         {skill: "C#"},
-        {skill: "Java"}
+        {skill: "Java"},
+        {skill: "Kurac"}
     ];
     
     const skillMap = skillArray.map((skills) =>
@@ -28,16 +29,12 @@ const Skills: React.FC<SkillsProps> = (
     )
 
     return(
-        <div>
-            <div className="h-8 pl-16 flex flex-wrap content-center">
-                <div className="text-2xl font-medium text-gray-700">
-                    {title}
-                </div>
+        <div> 
+            <div className="h-8 pl-16 content-center text-2xl font-medium text-gray-700">
+                {title}
             </div>
-            <div className="h-32 pl-16 flex flex-wrap content-center">
-                <div className="mr-48 text-base font-medium text-gray-700">
-                    {skillMap}
-                </div>
+            <div className="h-32 pl-16 content-center mr-48 text-base font-medium text-gray-700 relative">
+                {skillMap}
             </div>
         </div>
     )
@@ -52,8 +49,8 @@ const Intro: React.FC<IntroProps> = (
             "box-border",
             "border-4",
             "h-36",
-            "py-3",
-            "mt-24",
+            "py-small",
+            "my-24",
             "mx-24",
             "bg-blue-200",
             "rounded-xl",
@@ -62,26 +59,26 @@ const Intro: React.FC<IntroProps> = (
             "ease-in-out",
             "transform",
             "hover:-translate-y-1",
-            "hover:scale-105"
+            "hover:scale-105",
         ];
 
         return(
             <div className="grid grid-flow-col auto-cols-fr">
                 <div className={box.join(" ")}>
-                    <div className="h-8 pl-12 flex flex-wrap content-center">
+                    <div className="h-8 pl-12 content-center">
                         <div className="text-2xl font-medium text-gray-700">
                             {title}
                         </div>
                     </div>
-                    <div className="h-20 pl-16 flex flex-wrap content-center">
+                    <div className="h-20 pl-16 content-center">
                         <div className="mr-12 text-base font-medium text-gray-700">
                             {content}
                         </div>
                     </div>
                 </div>
-                    <div className={box.join(" ")}>
-                        <Skills title="Skills" content="" />
-                    </div>
+                <div className={box.join(" ")}>
+                    <Skills title="Skills" content="" />
+                </div>
             </div>
         )
     }

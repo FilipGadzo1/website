@@ -1,4 +1,3 @@
-import { link } from 'fs/promises';
 import React, {ReactElement} from 'react';
 import profile from '../images/profile.jpg';
 
@@ -58,7 +57,7 @@ const ProfileImage: React.FC<ProfileProps> = ({
 }: ProfileProps): ReactElement => {
     return (    
         <div>
-            <img src={profile} alt="profile picture"  className="h-96 w-full rounded-3xl items-center "/>
+            <img src={profile} alt="profile picture"  className="rounded-3xl items-center "/>
         </div>
     )
 }
