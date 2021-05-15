@@ -1,7 +1,6 @@
 import React, {ReactElement} from 'react';
 import Intro from '../components/Intro';
 import HeaderProfile from '../components/HeaderProfile';
-import Skills from '../components/Skills';
 
 export interface HomeProps{
 
