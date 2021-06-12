@@ -12,11 +12,9 @@ const Home: React.FC<HomeProps> = ({
     return(
         <div>
             <section>
-                <HeaderProfile />
+                <HeaderProfile text="Welcome to my portfolio!" />
             </section>
-            <section className="border-2 border-blue-300 border-dashed mx-24">
-            </section>
-            <section>
+            <section className="h-96" id="about">
                 <Intro 
                     title = {'- Introduction'}
                     content = {'In this CV you are going to get a sense of of our experience. ' +

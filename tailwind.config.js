@@ -8,7 +8,10 @@ module.exports = {
         m: "50%",
         ml: "75%",
         l: "100%"
-      }
+      },
+      backgroundImage: theme => ({
+        "header-image": "url('../images/background.jpg')",
+      })
     },
   },
   variants: {
